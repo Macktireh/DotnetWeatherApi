@@ -1,13 +1,12 @@
-﻿using Microsoft.OpenApi.Any;
-using WeatherApi.Models;
+﻿using WeatherApi.Models;
 
 namespace WeatherApi.Services;
 
 public class WeatherService : IWeatherService
 {
-    private readonly HttpClient _httpClient = new();
-    private readonly string? WEATHER_API_URL = Environment.GetEnvironmentVariable("WEATHER_API_URL");
-    private readonly string? WEATHER_API_KEY = Environment.GetEnvironmentVariable("WEATHER_API_KEY");
+    private static readonly string? WEATHER_API_URL = Environment.GetEnvironmentVariable("WEATHER_API_URL");
+    private static readonly string? WEATHER_API_KEY = Environment.GetEnvironmentVariable("WEATHER_API_KEY");
+    private static readonly HttpClient _httpClient = new HttpClient{};
 
     public IEnumerable<SearchLocation> FetchLocation(string query, string lang = "en")
     {
