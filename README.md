@@ -4,7 +4,17 @@ Bienvenue dans WeatherApi, un projet ASP.NET Core 8 permettant d'interagir avec 
 
 ## Configuration (sans Docker)
 
-1. Copiez le fichier `.env.example` en tant que `.env` et renseignez les valeurs appropriées pour les clés API météo.
+1. Cloner et variables d'environnement
+
+    ```plaintext
+    git clone https://github.com/Macktireh/DotnetWeatherApi.git
+    ```
+    
+    ```plaintext
+    cd DotnetWeatherApi
+    ```
+
+    Copiez le fichier `.env.example` en tant que `.env` et renseignez les valeurs appropriées pour les clés API météo.
 
     ```plaintext
     WEATHER_API_URL=
