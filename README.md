@@ -41,30 +41,22 @@ Bienvenue dans WeatherApi, un projet ASP.NET Core 8 permettant d'interagir avec 
 
 5. Construisez et lancez l'application avec Docker en utilisant la commande :
 
-    use docker compose
-
+    docker compose
 
     ```bash
     docker-compose up --build
     ```
 
-    use docker only
+    docker only
 
     ```bash
     docker run --name weatherapi -p 8080:8080 -p 8081:8081 -e WEATHER_API_URL=YOUR_WEATHER_API_URL -e WEATHER_API_KEY=YOUR_WEATHER_API_KEY macktireh/weatherapi:1.0 
     ```
 
-    use docker only with .env pour les variable d'environement
+    or
 
     ```bash
     docker run --name weatherapi -p 8080:8080 -p 8081:8081 --env-file .env macktireh/weatherapi:1.0 
-    ```
-
-
-    Pour arrêter l'application Docker, utilisez la commande :
-
-    ```bash
-    docker-compose down
     ```
 
 6. Accédez à Swagger pour explorer les endpoints de l'API :
