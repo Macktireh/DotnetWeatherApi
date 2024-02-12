@@ -53,7 +53,7 @@ Bienvenue dans WeatherApi, un projet ASP.NET Core 8 permettant d'interagir avec 
     docker run --name weatherapi -p 8080:8080 -p 8081:8081 -e WEATHER_API_URL=YOUR_WEATHER_API_URL -e WEATHER_API_KEY=YOUR_WEATHER_API_KEY macktireh/weatherapi:1.0 
     ```
 
-    or
+    ou
 
     ```bash
     docker run --name weatherapi -p 8080:8080 -p 8081:8081 --env-file .env macktireh/weatherapi:1.0 
